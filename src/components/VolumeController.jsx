@@ -1,7 +1,16 @@
 
-const VolumeController = () => {
+const VolumeController = ({isVolumeController}) => {
   return (
-    <div>VolumeController</div>
+    <div className={`w-[80px] absolute  -rotate-90 bottom-20 -right-3 shadow-md px-2 bg-white" ${ isVolumeController ? "" : "hidden"}`}>
+       <input
+        type="range"
+        min={0}
+        max={100}
+        step="0.1"
+        value={0}
+        className=" h-[5px] text-green-400 range"
+      />
+    </div>
   )
 }
 

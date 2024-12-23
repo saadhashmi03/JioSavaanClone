@@ -6,7 +6,7 @@ const Home = () => {
     <Navbar/>
     <Player/>
     </>
-  )
+  ) 
 }
 
 export default Home
